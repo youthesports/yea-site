@@ -1,0 +1,19 @@
+{
+    "name": "yea-site",
+    "author": "Hydrothermal",
+    "version": "0.1.0",
+    "description": "youth esports of america",
+    "dependencies": {
+        "bcrypt-nodejs": "^0.0.3",
+        "body-parser": "^1.18.3",
+        "connect-flash": "^0.1.1",
+        "ejs": "^2.6.1",
+        "express": "^4.16.3",
+        "express-session": "^1.15.6",
+        "passport": "^0.4.0",
+        "passport-local": "^1.0.0",
+        "pg": "^7.4.3"
+    },
+    "license": "MIT"
+}
+    

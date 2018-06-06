@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/core.css">
+</head>
+<body>
+    <form id="auth-form" action="auth/register" method="POST">
+        <% if(auth_message && auth_message.length > 0) { %>
+        <div id="auth-error">
+            <%=auth_message %>
+        </div>
+        <% } %>
+
+        <label class="field-wrapper">
+            <span>Username:</span>
+            <input class="biginput" name="username" type="text" required autofocus>
+        </label><br>
+
+        <label class="field-wrapper">
+            <span>Password:</span>
+            <input class="biginput" name="password" type="password" required>
+        </label><br>
+
+        <label class="field-wrapper">
+            <span>Email:</span>
+            <input class="biginput" name="email" type="text">
+        </label><br>
+
+        <label class="field-wrapper">
+            <input type="checkbox" name="rememberme"> Remember me
+        </label><br>
+        
+        <button id="submit" type="submit">Register</button>
+        <a href="/signin">Sign in instead</a>
+    </form>
+</body>
+</html>
