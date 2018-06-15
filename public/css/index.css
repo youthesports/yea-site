@@ -1,13 +1,13 @@
-#hero {
+.hero {
     position: relative;
 }
 
-#hero-image {
+.hero img {
     opacity: 0.25;
     width: 100%;
 }
 
-#hero-content {
+.hero-content {
     position: absolute;
     top: 0px;
     width: 100%;
@@ -19,11 +19,11 @@
     font-size: 34px;
 }
 
-#hero-content div {
+.hero-content div {
     margin-top: 60px;
 }
 
-#hero-content .link-button {
+.hero-content .link-button {
     background-color: #000;
     border-radius: 0px;
     font-size: 26px;

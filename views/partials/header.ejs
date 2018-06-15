@@ -1,0 +1,49 @@
+<% if(redirect) { %>
+    <p style="display:none;" id="redirect" \>
+        <%=redirect %>
+    </p>
+<% } %>
+<script src='js/overlay.js'></script>
+<div id="overlay" onclick="click()">	
+	<div class="overlay-content" id="login">
+		<img src="img/logo.png">
+		<% if(auth_message && auth_message.length > 0) { %>
+        <div id="auth-error">
+            <%=auth_message %>
+        </div>
+        <% } %>
+		<form id="auth-form" action="auth/signin" method="POST">
+		<input type="text" placeholder='Username' name="username" required />
+		<input type="password" placeholder='Password' / name="password" type="password" required>
+		<input type="checkbox" name="rememberme" /> Remember me
+		<button class="link-button" type="submit">Login</button>
+		</form>
+	</div>
+	<div class="overlay-content" id="register">
+		<img src="img/logo.png">
+		<% if(auth_message && auth_message.length > 0) { %>
+        <div id="auth-error">
+            <%=auth_message %>
+        </div>
+        <% } %>
+		<input type="text" name="username" placeholder='Username'/ required>
+		<input type="password" name="password" placeholder='Password'/ required>
+		<input type="password" placeholder='Retype Password'/ required>
+		<input type="text" name="email" placeholder='Email'/ required>
+		<input type="checkbox" name="rememberme" /> Remember me
+		<button class="link-button" type="submit">Register</button>
+	</div>
+</div>
+<nav id="top-nav">
+	<a  href="/" ><img src="img/logo.png" id="nav-logo"></a>
+	<div id="nav-links">
+		<a href="#">About</a>
+		<a href="#">News</a>
+		<a href="#">Clubs</a>
+		<a href="#">Shop</a>
+	</div>
+	<div id="nav-account">
+		<a class="link-button" id="login-link">Login</a>
+		<a class="link-button" id="register-link">Register</a>
+	</div>
+</nav>

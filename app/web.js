@@ -24,6 +24,9 @@ module.exports = function(dir) {
 
     //Routes
     app.get("/", (req, res) => {
-        res.render("index");
+        res.render("index",{
+			auth_message: req.flash("auth_message"),
+			redirect: null
+		});
     });
 }

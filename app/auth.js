@@ -33,13 +33,13 @@ auth.addRoutes = function(app) {
         res.locals.user = req.user;
         next();
     });
-
     app.get("/signin", (req, res) => {
         if(req.isAuthenticated()) {
             res.redirect("/");
         } else {
-            res.render("signin", {
-                auth_message: req.flash("auth_message")
+            res.render("index", {
+                auth_message: req.flash("auth_message"),
+				redirect: "signin"
             });
         }
     });
@@ -48,12 +48,12 @@ auth.addRoutes = function(app) {
         if(req.isAuthenticated()) {
             res.redirect("/");
         } else {
-            res.render("register", {
-                auth_message: req.flash("auth_message")
+            res.render("index", {
+                auth_message: req.flash("auth_message"),
+				redirect: "register"
             });
         }
     });
-
     app.post("/auth/signin", passport.authenticate("signin", {
         successRedirect: "/",
         failureRedirect: "/signin",
