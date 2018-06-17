@@ -178,6 +178,7 @@ a:hover {
 #nav-account .link-button {
     width: 140px;
     padding: 8px 0px;
+	cursor:pointer;
 }
 
 #login-link {

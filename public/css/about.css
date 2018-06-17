@@ -1,0 +1,96 @@
+.large-box {
+    position: relative;
+}
+
+.large-box img {
+    opacity: 0.25;
+    width: 100%;
+}
+.large-box-content {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	padding: 50px;
+    font-size: 30px;
+}
+.large-box-content p {
+    width:800px;
+}
+.large-box-content .link-button {
+    background-color: #000;
+    border-radius: 0px;
+    font-size: 26px;
+    padding: 12px;
+    width: 280px;
+}
+.spacer {
+	width:100%;
+	height:200px;
+}
+#belief {
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	width:100%;
+	height:350px;
+	background-color:#222222;
+}
+#belief h1 {
+	text-align:center;
+	width:1000px;
+	font-size:50px;
+}
+#stats {
+	margin:0px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	
+}
+.stats-item {
+	text-align:center;
+	margin:0px 50px 0px 50px;
+	height:300px;
+	font-size:25px;
+}
+.stats-item h1 {
+	font-size:100px;
+	color:  #63ca76;
+	margin-bottom:0px;
+}
+#team {
+	background-color:#222222;
+	padding:40px;
+	text-align:center;
+}
+#team h1 {
+	margin-bottom:100px;
+}
+.team-row {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.team-item {
+	width:250px;
+	margin:0px 10px 0px 10px;
+	background-color:#000;
+}
+.team-item img{
+	width:100%;
+}
+.team-member-name {
+	display:block;
+	text-align:center;
+	font-size:25px;
+}
+.team-member-role {
+	display:block;
+	text-align:center;
+	font-size:15px;
+	margin:10px;
+}

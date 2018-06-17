@@ -29,4 +29,10 @@ module.exports = function(dir) {
 			redirect: null
 		});
     });
+	app.get("/about", (req, res) => {
+        res.render("about",{
+			auth_message: req.flash("auth_message"),
+			redirect: null
+		});
+    });
 }
