@@ -35,4 +35,10 @@ module.exports = function(dir) {
 			redirect: null
 		});
     });
+	app.get("/games", (req, res) => {
+        res.render("games",{
+			auth_message: req.flash("auth_message"),
+			redirect: null
+		});
+    });
 }

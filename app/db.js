@@ -53,6 +53,33 @@ db.getAllAccounts = function(cb) {
         cb
     );
 };
+//TEMPORARY DB STUFF
+var articles = [];
+db.newAccount = function(article, cb) {
+    articles.push(article)
+	cb();
+};
+db.getAccount = function(id, cb) {
+    cb(articles[id]);
+};
+
+db.getAllArticles = function(cb) {
+    cb(articles);
+};
+
+var articles = [];
+db.newAccount = function(article, cb) {
+    articles.push(article)
+	cb();
+};
+db.getAccount = function(id, cb) {
+    cb(articles[id]);
+};
+
+db.getAllArticles = function(cb) {
+    cb(articles);
+};
+
 
 client.connect(err => {
     if(err) { throw err; }
