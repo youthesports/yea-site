@@ -55,29 +55,30 @@ db.getAllAccounts = function(cb) {
 };
 //TEMPORARY DB STUFF
 var articles = [];
-db.newAccount = function(article, cb) {
+// url - String, body - String/blob?, thumbnailUrl - String
+db.newArticle = function(article, cb) {
     articles.push(article)
 	cb();
 };
-db.getAccount = function(id, cb) {
+db.getArticle = function(id, cb) {
     cb(articles[id]);
 };
 
 db.getAllArticles = function(cb) {
     cb(articles);
 };
-
-var articles = [];
-db.newAccount = function(article, cb) {
-    articles.push(article)
+var scholarships = [];
+// contact info - string, descripting string/blob, name - string, amount - Number, deadline (optional) - Date
+db.newScholarship = function(scholarship, cb) {
+    scholarships.push(scholarship)
 	cb();
 };
-db.getAccount = function(id, cb) {
-    cb(articles[id]);
+db.getScholarship = function(id, cb) {
+    cb(scholarships[id]);
 };
 
-db.getAllArticles = function(cb) {
-    cb(articles);
+db.getAllScholarships = function(cb) {
+    cb(scholarships);
 };
 
 
