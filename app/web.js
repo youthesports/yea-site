@@ -35,8 +35,20 @@ module.exports = function(dir) {
 			redirect: null
 		});
     });
+	app.get("/resources", (req, res) => {
+        res.render("resources",{
+			auth_message: req.flash("auth_message"),
+			redirect: null
+		});
+    });
 	app.get("/games", (req, res) => {
         res.render("games",{
+			auth_message: req.flash("auth_message"),
+			redirect: null
+		});
+    });
+	app.get("/news", (req, res) => {
+        res.render("news",{
 			auth_message: req.flash("auth_message"),
 			redirect: null
 		});

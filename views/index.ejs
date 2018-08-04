@@ -1,63 +1,126 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Home | Youth Esports of America</title>
-    <link rel="stylesheet" type="text/css" href="css/core.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css"> </head>
+
 <body>
-    <% include ./partials/header.ejs %>
-    <div id="content">
-        <div class="carousel ">
-			<div class="hero carousel-item" >
-				<img src="img/index_hero.jpg" id="hero-image">
-				<div class="hero-content">
-					Home of High School Esports
-					<div>
-						<a class="link-button" href="#">YEA Programs</a>
-						<a class="link-button" href="#">View Streams</a>
-					</div>
-				</div>
-			</div>
-			<div class="hero carousel-item" >
-				<img src="img/index_hero.jpg" id="hero-image">
-				<div class="hero-content">
-					Dome of High School Esports
-					<div>
-						<a class="link-button" href="#">YEA Programs</a>
-						<a class="link-button" href="#">View Streams</a>
-					</div>
-				</div>
-			</div>
-			<div class="hero carousel-item" >
-				<img src="img/index_hero.jpg" id="hero-image">
-				<div class="hero-content">
-					Some of High School Esports
-					<div>
-						<a class="link-button" href="#">YEA Programs</a>
-						<a class="link-button" href="#">View Streams</a>
-					</div>
-				</div>
-			</div>
-			<div class="hero carousel-item" >
-				<img src="img/index_hero.jpg" id="hero-image">
-				<div class="hero-content">
-					Lome of High School Esports
-					<div>
-						<a class="link-button" href="#">YEA Programs</a>
-						<a class="link-button" href="#">View Streams</a>
-					</div>
-				</div>
-			</div>
-			<a class="carousel-button carousel-button-left">&lt;</a>
-			<a class="carousel-button carousel-button-right">&gt;</a>
-			<span class="carousel-dots"></span>
+  <%- include partials/header.ejs %>
+  <div class="py-5 text-center filter-dark h-75 d-flex align-items-center" style="background-image: url(&quot;https://pingendo.github.io/templates/sections/assets/cover_event.jpg&quot;);">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="mb-4 text-light display-4 h-25 my-5">Home of High School Esports</h1>
+          <a href="#" class="btn btn-lg mx-1 text-light btn-secondary">YEA Programs</a>
+          <a href="#" class="btn btn-lg mx-1 btn-primary">View Streams</a>
         </div>
-		<script src="js/carousel.js" /></script>
-        <div id="sponsors"><img src="img/sponsors.jpg" style="width: 55%;"></div>
-        <img src="img/web.jpg" style="width: 100%;">
-        <img src="img/jinx_vi.jpg" style="width: 100%; opacity: 0.3; margin-top: 500px;">
+      </div>
     </div>
-	<% include ./partials/footer.ejs %>
+  </div>
+  <div class="py-5 text-center bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12 bg-dark">
+              <h1 class="">Featured Partners</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-5">
+          <h2 class="text-light">Level up your E-Sports team</h2>
+          <p class="lead text-info">Register your club to compete across the nation and earn rewards, financial support and more from YEA and our corporate sponsors.</p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5 align-self-center">
+          <img class="img-fluid d-block w-100 img-thumbnail" src="https://pingendo.github.io/templates/sections/assets/gallery_9.jpg"> </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="https://pingendo.github.io/templates/sections/assets/gallery_3.jpg"> </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <h3 class="pt-3 text-light">Create your own extensive network</h3>
+          <p class="lead text-info">Whether you are a recreational or competitive gamer, YEA provides programs for you to immerse yourself in the fast growing E-Sports industry.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 text-center bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="text-light">What members are saying</h1>
+              <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6"></div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-dark text-white d-flex align-items-center h-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead">
+            <b>Register on YEA and take your
+              <br>game to the next level.</b>
+          </p>
+          <form class="form-inline">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Your email">
+              <div class="input-group-append">
+                <button class="btn btn-primary text-light" type="button">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="p-4 col-md-5">
+          <h2 class="mb-4 text-light">Mapsite</h2>
+          <ul class="">
+            <a href="#" class="text-white">Team</a>
+            <br>
+            <a href="#" class="text-white">Terms of Services</a>
+            <br>
+            <a href="#" class="text-white">Careers</a>
+            <br> </ul>
+        </div>
+        <div class="p-4 col-md-5">
+          <h2 class="mb-4 text-light">Follow us</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
 </body>
+
 </html>

@@ -1,49 +1,27 @@
-<% if(redirect) { %>
-    <p style="display:none;" id="redirect" \>
-        <%=redirect %>
-    </p>
-<% } %>
-<script src='js/overlay.js'></script>
-<div id="overlay" onclick="click()">	
-	<div class="overlay-content" id="login">
-		<img src="img/logo.png">
-		<% if(auth_message && auth_message.length > 0) { %>
-        <div id="auth-error">
-            <%=auth_message %>
-        </div>
-        <% } %>
-		<form id="auth-form" action="auth/signin" method="POST">
-		<input type="text" placeholder='Username' name="username" required />
-		<input type="password" placeholder='Password' / name="password" type="password" required>
-		<input type="checkbox" name="rememberme" /> Remember me
-		<button class="link-button" type="submit">Login</button>
-		</form>
-	</div>
-	<div class="overlay-content" id="register">
-		<img src="img/logo.png">
-		<% if(auth_message && auth_message.length > 0) { %>
-        <div id="auth-error">
-            <%=auth_message %>
-        </div>
-        <% } %>
-		<input type="text" name="username" placeholder='Username'/ required>
-		<input type="password" name="password" placeholder='Password'/ required>
-		<input type="password" placeholder='Retype Password'/ required>
-		<input type="text" name="email" placeholder='Email'/ required>
-		<input type="checkbox" name="rememberme" /> Remember me
-		<button class="link-button" type="submit">Register</button>
-	</div>
-</div>
-<nav id="top-nav">
-	<a href="/" ><img src="img/logo.png" id="nav-logo"></a>
-	<div id="nav-links">
-		<a href="/about">About</a>
-		<a href="/games">Games</a>
-		<a href="#">Resources</a>
-		<a href="#">News</a>
-	</div>
-	<div id="nav-account">
-		<a class="link-button" id="login-link">Login</a>
-		<a class="link-button" id="register-link">Register</a>
-	</div>
-</nav>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="img/logo.png"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3SupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/games">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/resources">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/news">News</a>
+          </li>
+        </ul>
+        <a class="ml-3 btn navbar-btn btn-info text-light" href="#">Login</a>
+        <a class="btn btn-default navbar-btn btn-primary">Register</a>
+      </div>
+    </div>
+  </nav>
